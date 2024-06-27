@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VivaVogue</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style/global.css" />
+    <link rel="stylesheet" href="./src/style/responsive.css" />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="text-white py-4">
+      <div class="container mx-auto flex items-center justify-between">
+        <!-- NAMA WEBSITE -->
+        <div class="header-logo">
+          <a href="index.html" class="text-xl font-bold">VivaVogue</a>
+        </div>
+        <!-- MENU ITEMS -->
+        <div class="flex-1 mx-4 flex items-center justify-center space-x-12">
+          <a href="index.html" class="flex items-center">
+            <span>Home</span>
+          </a>
+          <a href="#products" class="flex items-center">
+            <span>Products</span>
+          </a>
+          <a href="#about" class="flex items-center">
+            <span>About</span>
+          </a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="#login" class="flex items-center space-x-2">
+            <span class="mdi--account-outline"></span>
+          </a>
+          <span class="ci--line-l"></span>
+          <a href="#cart" class="flex items-center space-x-2">
+            <span class="mdi--cart-outline"></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVIGATION BAR END -->
+
+    <main>
+      <article>
+        <!-- HERO -->
+        <div id="jumbotron" class="mx-auto flex items-center min-h-screen">
+          <div class="flex-1 flex flex-col justify-center pl-32">
+            <h3 class="text-4xl text-left font-bold mb-4">Style, Comfort, and Tech <br />in Every Click</h3>
+            <button class="btn-1 ml-auto">
+              <span>Get Started</span>
+            </button>
+          </div>
+        </div>
+        <!-- HERO END -->
+
+        <aside>
+          <!-- SERVICES -->
+          <div id="services">
+            <h3 class="text-4xl font-bold mb-4 text-center">Why Us?</h3>
+            <p class="text-lg text-center">Discover why we are your best choice for quality and service.</p>
+            <div class="container flex justify-center flex-wrap">
+              <div class="box bg-secondary p-4 m-4 rounded-lg shadow-lg">
+                <div class="imgBx">
+                  <img src="src/img/cod.png" alt="Cash On Delivery" />
+                </div>
+                <div class="content">
+                  <div>
+                    <h2>Cash On Delivery</h2>
+                    <p>We allow customers to pay for their orders when the goods arrive at their location.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="box bg-secondary p-4 m-4 rounded-lg shadow-lg">
+                <div class="imgBx">
+                  <img src="src/img/gratisongkir.webp" alt="Free Shipping" />
+                </div>
+                <div class="content">
+                  <div>
+                    <h2>Free Shipping</h2>
+                    <p>We offer free shipping for orders above a certain amount or to specific locations.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="box bg-secondary p-4 m-4 rounded-lg shadow-lg">
+                <div class="imgBx">
+                  <img src="src/img/customer-service.jpg" alt="24/7 Support" />
+                </div>
+                <div class="content">
+                  <div>
+                    <h2>24/7 Support</h2>
+                    <p>We provide round-the-clock customer support to assist customers with inquiries, issues, and orders at any time of day or night.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICES END -->
+        </aside>
+
+        <!-- PRODUCTS -->
+        <h3 class="text-4xl font-bold mb-2 text-center">Products</h3>
+        <div class="products-container mx-auto relative">
+          <div class="swiper-container">
+            <div class="swiper-wrapper" id="swiper-wrapper"></div>
+          </div>
+        </div>
+        <!-- PRODUCTS END -->
+
+        <!-- CATEGORIES -->
+        <h3 class="text-4xl font-bold mb-2 text-center">Categories</h3>
+        <div id="categories" class="flex justify-center flex-wrap"></div>
+        <!-- CATEGORIES END -->
+      </article>
+    </main>
+
+    <footer class="text-white py-8">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="footer-logo">
+          <a href="index.html" class="text-xl font-bold">VivaVogue</a>
+        </div>
+        <nav class="flex-1 mx-4 flex items-center justify-center space-x-12">
+          <a href="index.html" class="flex items-center">
+            <span>Home</span>
+          </a>
+          <a href="#products" class="flex items-center">
+            <span>Products</span>
+          </a>
+          <a href="#about" class="flex items-center">
+            <span>About</span>
+          </a>
+        </nav>
+        <div class="flex items-center space-x-4">
+          <a href="https://github.com/MuhammadFirzaFernanda17" class="flex items-center space-x-2">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/muhammad-firza-fernanda-84abb3221/" class="flex items-center space-x-2">
+            <span class="icon">
+              <i class="fab fa-linkedin"></i>
+            </span>
+          </a>
+          <a href="https://www.instagram.com/benarinipiers17/" class="flex items-center space-x-2">
+            <span class="icon">
+              <i class="fab fa-instagram"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>Created by Muhammad Firza Fernanda &copy; 2024</p>
+      </div>
+    </footer>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLWL5N9CSM"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/js/all.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="./src/js/index.js"></script>
+  </body>
+</html>
